@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Ejercicio 3 - Selección de un elemento del documento mediante el id.
+    </h1>
+
+    <table>
+      <tr>
+        <td id="parrafo1">Primer Fila</td>
+      </tr>
+      <tr>
+        <td>Segunda Fila</td>
+      </tr>
+    </table>
+
+    <!-- <script>
+        let x=$(document);
+        x.ready(inicializarEventos)
+
+        function inicializarEventos(){
+            let x = $("#parrafo1")
+            x.click(presionParrafo1);
+        }
+        function presionParrafo1(){
+            let x = $("#parrafo1");
+            x.css("color","yellow");
+
+        }
+    </script>
+    -->
+
+    <h1>Ejercicio 4-Selección de elementos por el tipo de elementos.</h1>
+
+    <ul>
+      <li>Lautaro</li>
+      <li>Dibu</li>
+      <li>Messi</li>
+      <li>Paredes</li>
+    </ul>
+    <!--
+    <script>
+        let x = $(document);
+        x.ready(inicializarEventos);
+
+        function inicializarEventos(){
+            let x = $("li");
+            x.click(presionarFila)
+        }
+        function presionarFila(){
+            let x= $(this);
+            x.hide();
+        }
+        
+    </script>
+    -->
+
+    <h1>Ejercicio 5 - Selección de elementos utilizando los selectores CSS.</h1>
+
+    <table class="tabla">
+      <tr>
+        <td id="fila1">BUENOS</td>
+      </tr>
+      <tr>
+        <td id="fila2">DIAS</td>
+      </tr>
+      <tr>
+        <td id="fila3">UNO</td>
+      </tr>
+    </table>
+    <br />
+
+    <table>
+      <tr>
+        <td>BUENOS</td>
+      </tr>
+      <tr>
+        <td>DIAS</td>
+      </tr>
+      <tr>
+        <td>DOS</td>
+      </tr>
+    </table>
+
+    <!--
+    <script  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        let x = $(document);
+        x.ready(inicializarEventos);
+    
+        function inicializarEventos(){
+            let x = $(".tabla");
+            x.click(presionarFilafondo);
+    
+        }
+        function presionarFilafondo(){
+            let f1 = $("#fila1");
+            f1.css ("background-color","green");
+            let f2 = $("#fila2");
+            f2.css ("background-color","red");
+            let f3 = $("#fila3");
+            f3.css ("background-color","yellow");
+        }
+    </script>
+    -->
+
+    <h1>
+      Ejercicio 6 - Selección de elementos utilizando las clases CSS definidas.
+    </h1>
+
+    <h2>Noticia 1</h2>
+    <div id="Noticia1">
+      <p>
+        En esta primer noticia no vamos a hablar de nada solo quiero escribir
+        para rellenar el espacio
+      </p>
+    </div>
+
+    <h2>Noticia 2</h2>
+    <div id="Noticia2">
+      <p>
+        En esta Segunda noticia no vamos a hablar de nada solo quiero escribir
+        para rellenar el espacio
+      </p>
+    </div>
+
+    <h2>Noticia 3</h2>
+    <div id="Noticia3">
+      <p>
+        En esta Tercer noticia no vamos a hablar de nada solo quiero escribir
+        para rellenar el espacio
+      </p>
+    </div>
+
+    <button id="fuenteN1">Fuente N1</button>
+    <br />
+    <button id="fuenteN2">Fuente N2</button>
+    <br />
+    <button id="fuenteN3">Fuente N3</button>
+
+    <!--
+    <script  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        let x = $(document);
+        x.ready(inicializarEventos);
+
+        function inicializarEventos(){
+            let n1 = $("#fuenteN1");
+            n1.click(cambiarfuenteN1);
+            let n2=$("#fuenteN2");
+            n2.click(cambiarfuenteN2);
+            let n3=$("#fuenteN3");
+            n3.click (cambiarfuenteN3)
+        }
+        function cambiarfuenteN1(){
+            let fuenteN1 = $("#Noticia1");
+            fuenteN1.css("font-size","xx-small");
+        }
+        function cambiarfuenteN2(){
+            let fuenteN2 = $("#Noticia2");
+            fuenteN2.css("font-size","xx-large");
+        }
+        function cambiarfuenteN3(){
+            let fuenteN3 = $("#Noticia3");
+            fuenteN3.css("font-size","large");
+        }
+     </script>
+    -->
+
+    <h1>Ejercicio 7 - Método text(), text(valor)</h1>
+    <table class="tablaCambiar">
+      <tr>
+        <td>Primero</td>
+        <td>Boca</td>
+        <td>Juniors</td>
+      </tr>
+      <tr>
+        <td>Segundo</td>
+        <td>River</td>
+        <td>Plate</td>
+      </tr>
+      <tr>
+        <td>Tercero</td>
+        <td>Independiente</td>
+        <td>Avellaneda</td>
+      </tr>
+    </table>
+    <br />
+
+    <table>
+      <tr>
+        <td>Cuarto</td>
+        <td>Estudiantes</td>
+        <td>De La Plata</td>
+      </tr>
+      <tr>
+        <td>Quinto</td>
+        <td>Racing</td>
+        <td>Avellaneda</td>
+      </tr>
+      <tr>
+        <td>Sexto</td>
+        <td>San Lorenzo</td>
+        <td>de Almagro</td>
+      </tr>
+    </table>
+    <button id="Boton">Cambiar Contenido</button>
+
+    <!--
+    <script  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   
+   <script>
+
+    let x = $(document);
+        x.ready(inicializarEventos);
+    
+    function inicializarEventos(){
+        let cambiar = $("#Boton");
+        cambiar.click(cambiarcontenido);
+    }
+    function cambiarcontenido(){
+        let tabla1= $(".tablaCambiar");
+        tabla1.text("--------");
+    }
+    </script>
+    -->
+
+    <h1>
+      Ejercicio 8 - Métodos attr(nombre de propiedad), attr(nombre de
+      propiedad,valor) y removeAttr(nombre de propiedad)
+    </h1>
+
+    <a class="hipervinculo" href="#">Hipervinculo</a>
+    <br />
+    <br />
+    <button id="boton1">UCP</button>
+    <button id="boton2">Sistema de Alumnos</button>
+    <button id="boton3">Youtube</button>
+
+    <!--
+    <script  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        let x = $(document);
+        x.ready(inicializarEventos);
+
+        function inicializarEventos(){
+            let x = $("#boton1");
+            x.click(cambiarUCP);
+            x = $("#boton2");
+            x.click(cambiarSist);
+            x=$("#boton3")
+            x.click(cambiarYoutube);
+
+        }
+        function cambiarUCP(){
+            let x = $(".hipervinculo");
+           x.attr("href","https://www.ucp.edu.ar/");
+            x.text("Campus UCP");
+        }
+        function cambiarSist(){
+            let x = $(".hipervinculo");
+           x.attr("href","https://sistemacuenca.ucp.edu.ar/alumnosnotas/Default.aspx?ReturnUrl=%2falumnosnotas%2fProteccion%2fInasistencias.aspx%3fSel%3d1&Sel=1");
+            x.text("Sistema de Alumnos");
+        }
+        function cambiarYoutube(){
+            let x = $(".hipervinculo");
+           x.attr("href","https://www.youtube.com/");
+            x.text("Youtube");
+        }
+
+
+    </script>
+    -->
+
+    <h1>Ejercicio 9- Métodos addClass y removeClass</h1>
+
+    <table>
+      <thead class="thead">
+        <tr>
+          <td>Titulo---Numeros</td>
+        </tr>
+      </thead>
+
+      <tbody class="tbody">
+        <tr>
+          <td>CUATRO</td>
+          <td>CINCO</td>
+          <td>SEIS</td>
+        </tr>
+        <tr>
+          <td>SIETE</td>
+          <td>OCHO</td>
+          <td>NUEVE</td>
+        </tr>
+      </tbody>
+
+      
+    </table>
+    <button id="botonAsociar">Asociar</button>
+      <button id="botonDesasociar">Desasociar</button>
+
+        <!--
+      <script  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script>
+        let x = $(document);
+        x.ready(inicializarEventos);
+
+        function inicializarEventos(){
+            let x = $("#botonAsociar");
+            x.click(asociarestilo);
+            x = $("#botonDesasociar");
+            x.click(desasociarestilo);
+        }
+
+        function asociarestilo(){
+            let x = $(".thead");
+            x.addClass("thead2");
+
+        }
+
+        function desasociarestilo(){
+            let x =$(".thead2");
+            x.removeClass("thead2",);
+        }
+        </script>
+      -->
+
+      <h1>Ejercicio 10- Método html() y html(valor)</h1>
+
+      <div id="cabecera">
+        <h2>Esta es la cabecera de la pagina</h2>
+        <hr>
+
+      </div>
+      
+      <div id="contenido">
+        <p>Este es un parrafo que constituye el cuerpo de la pagina para mostar en el ejercicio</p>
+      <form>Ingrese nombre:
+        <input type="text" >
+        <br>
+        <br>
+
+      </div>
+      
+
+      <button id="botonCabecera">HTML Cabecera</button>
+      <button id="botonContenido">HTML Contenido</button>
+
+      <!--
+      <script  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script>
+        let x = $(document);
+        x.click(inicializarEventos);
+
+        function inicializarEventos(){
+            let x =$("#botonCabecera");
+            x.click(mostrarCabecera);
+            x = $("#botonContenido");
+            x.click(mostrarContenido)
+
+        }
+        function mostrarCabecera(){
+            let x = $("#cabecera");
+            x.html('<div id="cabecera">'+'<h2>Esta es la cabecera de la pagina</h2>'
+                +'<hr>');
+            alert(x.html());   
+
+        }
+        function mostrarContenido(){
+            let x = $("#contenido");
+            x.html('<div id="contenido">'+'<p>Este es un parrafo que constituye el cuerpo de la pagina para mostar en el ejercicio</p>'
+                +'<form>Ingrese nombre:'+' <input type="text" >');
+            alert(x.html());   
+
+        }
+
+      </script>
+      -->
+
+      <h1>Ejercicio 11- Administración de eventos con jQuery</h1>
+
+      <p>El elemento strong le da enfasis a una <strong>palabra</strong>, en el texto se ve en <strong>negrita</strong></p>
+
+      <!--
+      <script  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script>
+        let x =$(document);
+        x.ready(inicializarEventos);
+
+        function inicializarEventos(){
+            let x = $("strong");
+            x.click(ocultarstrong);
+        }
+        function ocultarstrong(){
+            let x =$("strong");
+            x.hide("strong");
+
+        }
+
+      </script>
+      -->
+
+      <h1>Ejercicio 12- Eventos mouseover y mouseout.</h1>
+
+      <table class="tablacolor">
+        <tr>
+            <td>Fabio</td>
+        </tr>
+        <tr>
+            <td>Denis</td>
+        </tr>
+      </table>
+
+      <!--
+      <script  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script>
+        let x =$(document);
+        x.ready (inicializarEventos);
+
+        function inicializarEventos(){
+            let x = $(".tablacolor");
+            x.mouseover(entramouse);
+            x.mouseout(salemouse);
+        }
+        function entramouse (){
+            $(".tablacolor").css("color","red")
+        }
+        function salemouse(){
+            $(".tablacolor").css("color","blue")
+        }
+      </script>
+      -->
+
+      <h1>Ejercicio 13- Evento hover.</h1>
+
+      <table class="eventohover">
+        <tr>
+            <td>Catedra:</td>
+        </tr>
+        <tr>
+            <td>Paradigmas</td>
+        </tr>
+      </table>
+
+      <!--
+      <script  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script>
+        let x = $(document);
+        x.ready(inicializarEvento);
+
+        function inicializarEvento() {
+         let x = $(".eventohover");
+        x.hover(entraMouse, saleMouse);
+        }
+
+        function entraMouse() {
+        x= $(".eventohover").css("color", " rgb(191, 0, 255)");
+        }
+
+        function saleMouse() {
+        $(".eventohover").css("color", "black");
+        }
+      </script>
+      -->
+
+
+
+
+
+
+  </body>
+</html>
